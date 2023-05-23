@@ -10,7 +10,7 @@ int main(){
 ****
 *****
 	
-
+*/
 	for(int i = 0; i<5;i++){
 		for(int j = 0; j <=i;j++){
 			cout<<"*";
@@ -18,13 +18,13 @@ int main(){
 		}
 		cout<<endl;
 	}
- 
+ /*
 *****
 ****
 ***
 **
 *
-	
+*/	
 
 cout<<"----------"<<endl;
 	for(int i = 0; i<5;i++){
@@ -35,13 +35,13 @@ cout<<"----------"<<endl;
 
 		cout<<endl;
 	}
-
+/*
 *****
  ****
   ***
    **
     *
-
+*/
 cout<<"----------"<<endl;
 	for(int i = 0; i<5;i++){
 			for(int j = 0; j<=i-1;j++){
@@ -54,13 +54,13 @@ cout<<"----------"<<endl;
 
 		cout<<endl;
 	}
-
+/*
     *
    **
   ***
  ****
 *****
-	
+*/	
 
 cout<<"----------"<<endl;
 	for(int i = 0; i<5;i++){
@@ -74,12 +74,12 @@ cout<<"----------"<<endl;
 
 		cout<<endl;
 	}
- 
+/* 
 1234
 1234
 1234
 1234
-
+*/
 int n = 5;
 cout<<"---------------"<<endl;	
 	for(int i = 0 ;i <5;i++){
@@ -89,13 +89,13 @@ cout<<"---------------"<<endl;
 		cout<<endl;
 	}	
 cout<<"---------------"<<endl;	
-
+/*
 1
 2 3
 3 4 5 
 4 5 6 7
 5 6 7 8 9
-
+*/
 	
 for(int i = 0; i <n;i++){
 	for(int j = 0;j<=i;j++){
@@ -119,7 +119,7 @@ for(int i = 0; i <n;i++){
 321
 4321
 54321
-
+*/
 
 	for(int i = 1; i <= n;i++){
 		int v = 1;
@@ -128,13 +128,13 @@ for(int i = 0; i <n;i++){
 		}
 		cout<<endl;
 	}
-
+/*
 AAAAA
 BBBBB
 CCCCC
 DDDDD
 EEEEE
-
+*/
 char a = 'A';
 	for(int i = 0; i<n;i++){
 		for(int j = 0; j <n;j++){
@@ -142,12 +142,13 @@ char a = 'A';
 		}
 		cout<<endl;
 	}
+/*
 ABCDE
 ABCDE
 ABCDE
 ABCDE
 ABCDE
-
+*/
 char a = 'A';
 	for(int i = 0; i<n;i++){
 		for(int j = 0; j <n;j++){
@@ -155,13 +156,14 @@ char a = 'A';
 		}
 		cout<<endl;
 	}
+/*	
 A
 AB
 ABC
 ABCD
 ABCDE	
-
-		char a = 'A';
+*/
+	char a = 'A';
 	for(int i = 0; i<n;i++){
 		for(int j = 0; j <=i;j++){
 		
@@ -169,12 +171,13 @@ ABCDE
 		}
 		cout<<endl;
 	}
-
+/*
 A
 BC
 DEF
 GHIJ
 KLMNO
+*/
 	char a = 'A';
 	for(int i = 0; i<n;i++){
 		for(int j = 0; j <=i;j++){
@@ -190,12 +193,13 @@ KLMNO
         }
         cout << endl;
     }
-
+/*
         1
       1 2 1
     1 2 3 2 1
   1 2 3 4 3 2 1
 1 2 3 4 5 4 3 2 1
+*/
 
 	for(int i = 0; i<n;i++){
 			for(int j = 1; j<=5-i-1;j++){
@@ -212,6 +216,5 @@ KLMNO
 
 		cout<<endl;
 	}
-*/
 
 }
