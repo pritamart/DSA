@@ -50,4 +50,5 @@ class ChocolateDistribution {
 			
 	}
 }
-// This code is contributed by Arnav Kr. Mandal.
+// This code is contributed by Pritam samui
+.
