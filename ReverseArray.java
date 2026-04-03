@@ -1,6 +1,6 @@
 // titel: Reverse an array
 // author: Pritam Samui
-// date: 21-06-2022
+// date: 21-06-2022 //
 
 public class ReverseArray {
     static void rverseArray(int arr[], int start, int end){
