@@ -1,0 +1,47 @@
+class MaxProfitfromTwoMachines {
+    public int maxProfit(int x, int y, int[] a, int[] b) {
+        // code here
+        int n = a.length;
+        int maxProfit = 0;
+
+        // 1. Create a 2D array to store {diff, index}
+        int[][] diffs = new int[n][2];
+        for (int i = 0; i < n; i++) {
+            diffs[i][0] = Math.abs(a[i] - b[i]);
+            diffs[i][1] = i;
+        }
+
+        // 2. Sort by the difference in descending order
+        Arrays.sort(diffs, (o1, o2) -> Integer.compare(o2[0], o1[0]));
+
+        // 3. Assign tasks greedily based on the highest difference
+        for (int i = 0; i < n; i++) {
+            int idx = diffs[i][1];
+
+            // If Machine A pays more and has capacity...
+            if (a[idx] >= b[idx]) {
+                if (x > 0) {
+                    maxProfit += a[idx];
+                    x--;
+                } else {
+                    // Forced to use Machine B
+                    maxProfit += b[idx];
+                    y--;
+                }
+            } 
+            // If Machine B pays more and has capacity...
+            else {
+                if (y > 0) {
+                    maxProfit += b[idx];
+                    y--;
+                } else {
+                    // Forced to use Machine A
+                    maxProfit += a[idx];
+                    x--;
+                }
+            }
+        }
+        return maxProfit;
+  
+    }
+}
